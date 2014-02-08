@@ -1,5 +1,7 @@
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=4b48a6cf-5251-4631-920f-e61b3fe82937");
-
+body, html {
+	width: 100%;
+}
 .assistive-text {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
@@ -83,6 +85,7 @@
 
 #calculator {
 	font-family: 'AvantGardeGothicITCW01B 731069', sans-serif;
+	position:relative;
 }
 
 #calculator,

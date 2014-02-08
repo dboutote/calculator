@@ -24,6 +24,7 @@ jQuery(function($) {
 		var $calcColorServcsOtr = $('#calc_colorservices_otr', $calcForm );
 		$pricingOverlay.css({'height':(($(document).height())+100)+'px'});
 		
+		
 		// open overlay
 		$("a.overlay-pricing").click(function(){
 			$pricingOverlay.fadeIn(400);
