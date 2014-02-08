@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+.clearfix:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.clearfix { display: inline-block; }
+/* Hides from IE-mac \*/* html .clearfix { height: 1%; }.clearfix { display: block; }/* End hide from IE-mac */
+
+ul {
+    list-style: square inside none;
+    margin-bottom: 24px;
+    margin-left: 18px;
+}
+.display-no {
+	display: none;
+}
+
+.hcc-wrap,
+.hcc-configform {
+	max-width: 760px;
+	position: relative;
+}
+
+/**
+ * Promos Table
+ */
+.promos #login_id {
+	width: 90px;
+}
+.promos #full_name {
+	width: 250px;
+}
+#login-table .tablenav {
+	clear:none;
+	margin-top: 30px;
+}
+.login-log .subsubsub {
+	margin-top: 30px;
+	padding: 4px 0 0;
+	vertical-align: middle;
+}
+table.promos {
+	clear:both;
+	margin-top: 10px;
+}
+
+/* /promos */
+
+
+/**
+ Payments Tables
+ */
+.payments,
+.payments th {
+	font-size:12px;
+}
+.payments #ID,
+.payments #user_id,
+.payments #payment_amt {
+	width: 60px;
+}
+
+.payments #credit_qty {
+	width: 70px;
+}
+
+/* /payments */
+
+/**
+ * Settings Form
+ */
+ 
+.hcc-configform {
+	padding: 9px 18px;
+}
+
+.hcc-configform .fields {
+    clear: both;
+    margin: 0 0 18px 0;
+}
+
+
+.hcc-configform label,
+.hcc-configform .description {
+    display: inline-block;
+    float: left;
+    line-height: 24px;
+	margin-right: 5px;
+    min-width: 130px;
+}
+
+.fields label {
+	font-weight: bold;
+}
+
+.fields .mini-desc {
+	color: #666;
+	font-weight: normal;
+}
+
+.hcc-configform .text {
+    float: left;
+    min-width: 300px;
+}
+
+
+.hcc-configform .text,
+.hcc-configform .pass,
+.hcc-configform input[type="text"],
+.hcc-configform input[type="password"],
+.hcc-configform textarea,
+.hcc-configform select {
+	clear: left;
+	margin-right: 5px;
+	background: none repeat scroll 0 0 #fcfcfc;
+	border: 1px solid #ccc;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 1px 1px 2px rgba(200, 200, 200, 0.2) inset;
+	color: #555555;
+	font-weight: 200;
+	line-height: 1;
+	margin-top: 4px;
+	padding: 6px;
+	outline: medium none;
+	width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */	
+}
+#wp-pc_desc-editor-container textarea {
+	border: 0 none;
+}
+.hcc-configform select {
+	height: auto;
+}
+
+.hcc-configform .check {
+    float: left;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.instruct {
+	font-style: italic;
+	line-height: 1.5;
+	margin: 10px;
+}
+
+/* /settings-form */
+
+
+/**
+ * Promos Form
+ */
+#hcc-configform-promos textarea {
+	width: 100%;
+}
+ 
+
+/* /promos-form */

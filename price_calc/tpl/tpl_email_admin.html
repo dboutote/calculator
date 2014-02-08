@@ -1,0 +1,28 @@
+<html>
+<head>
+<title><?php echo $subject_admin; ?></title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+</head>
+<body>
+
+<p>Name: <?php echo $calc_name;?></p>
+<p>Title: <?php echo $calc_title;?></p>
+<p>Email: <?php echo $calc_email;?></p>
+<p>Phone Number: <?php echo $calc_phone;?></p>
+<p>Salon Name: <?php echo $calc_salon;?></p>
+<p>Salon Address: <?php echo $calc_address;?></p>
+<p>POS System: <?php echo $calc_pos;?></p>
+<p>Color Line(s): <?php echo $calc_colors;?></p>
+<p>Average Cost of color (tubes/bottles) used: <?php echo $calc_colorcost;?></p>
+<p>Average Tube/Bottle size in ounces: <?php echo $calc_tubesize;?></p>
+<p>Average amount of color user per color service in ounces: <?php echo $calc_coloramt;?></p>
+<p>Average number of total salon color services per week: <?php echo $calc_colorservices;?></p>
+<div id="calc-results-header"><?php echo $pre_results_user;?></div>
+<div id="calc-results-body">
+	<p>Estimated Cost Savings Using SureTint: <?php echo $estimated_cost_savings_percent;?>%</p>
+	<p>Estimated Net Annual Savings Using SureTint: $: <?php echo $estimated_net_annual_savings;?></p>
+</div>
+<div id="calc-results-footer"><?php echo $post_results_user;?></div>
+				
+</body>
+</html>

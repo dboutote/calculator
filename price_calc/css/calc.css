@@ -1,0 +1,287 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=4b48a6cf-5251-4631-920f-e61b3fe82937");
+
+.assistive-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+}
+#calculator .loading {
+	text-align:center;
+	margin: 10px 0;
+}
+.display-no {
+	display: none;
+}
+
+#calculator .loading .spinner {
+    background: url("../img/loading.gif") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: inline-block;
+    margin: 0 3px;
+    width: 16px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 20px;
+}
+
+.pricing {
+	background: #6A1F22;
+    background: none repeat scroll 0 0 rgba(106, 31, 34, 0.95);
+	display: none;
+    /*height: 100%;*/
+	min-height: 1600px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+	color: #fff;
+}
+
+.pricing .close {
+    background-image: url("../img/sprite.png");
+    background-position: 0 -389px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'AvantGardeGothicITCW01B 731069', sans-serif;
+    font-size: 0.75em;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 42px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 20px;
+    width: 42px;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;  
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+	.pricing .close {
+		background-image: url('../img/sprite@2x.png');
+		background-size: 200px 600px;
+	}
+}
+.pricing .close:hover {
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+.pricing h3 {
+  color: #ffffff;
+  font-size: 6.75em;
+  font-family: "Avenir Next W01 Cn Thin", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  line-height: 96px;
+  letter-spacing: -0.02em;
+  padding: 80px 0 10px;
+}
+
+#calculator {
+	font-family: 'AvantGardeGothicITCW01B 731069', sans-serif;
+}
+
+#calculator,
+#calcresponse {
+    margin: 0 auto;
+    max-width: 640px;
+    padding-bottom: 40px;
+	color: #fff;
+}
+
+.pricing .validation_message,
+.pricing .validation_error,
+.pricing .form-header,
+.pricing .form-footer,
+.pricing .response-errors,
+#calcresponse {
+    color: #FFFFFF;
+    font-family: 'ITCAvantGardeW01-CnBk', sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+	margin-top: 5px;
+}
+#calcresponse { font-size: 1.25em;}
+#calcresponse p { margin-bottom: 18px; }
+
+#calculator label {
+    color: #fff;
+    display: block;
+    font-family: 'ITCAvantGardeW01-CnBk', sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 400;
+	line-height: 1.4;
+    margin: 12px 0 4px;
+}
+
+#calculator input,
+#calculator select {	
+	width: 100%;
+	height: 40px;
+	padding: 0 1%;
+	line-height: 40px;
+	outline: none;
+	border: none;
+	background: #fff;
+	-webkit-box-shadow: inset 0, -1px, 5px, 5px, rgba(0, 0, 0, 0.2) 0 0 0 #000000;
+	-moz-box-shadow: inset 0, -1px, 5px, 5px, rgba(0, 0, 0, 0.2) 0 0 0 #000000;
+	-o-box-shadow: inset 0, -1px, 5px, 5px, rgba(0, 0, 0, 0.2) 0 0 0 #000000;
+	box-shadow: inset 0, -1px, 5px, 5px, rgba(0, 0, 0, 0.2) 0 0 0 #000000;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	vertical-align: middle;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#calculator select {
+	padding: 9px 4px;	
+	margin-bottom: 5px;
+}
+
+#calculator .gform_button,
+#calculator input[type="submit"] {	
+	display: block;
+	max-width: 260px;
+	margin: 10px auto 0;
+	padding: 0;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #0b9ca9;
+	color: #ffffff;
+	font-size: 1.625em;
+	font-family: 'AvantGardeGothicITCW01B 731069', sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	text-transform: uppercase;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#calculator .gform_button:hover {
+	background: #0d7881;
+}
+
+
+@media only screen and (max-width: 959px) {
+	.pricing h3 {
+		font-size: 6em;
+	}
+}
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+	.pricing h3 {
+		font-size: 5em;
+		padding: 80px 0 20px;
+		line-height: 50px;
+	}
+	
+	.pricing .validation_message,
+	.pricing .validation_error,
+	.pricing .form-header,
+	.pricing .form-footer,
+	.pricing .response-errors {
+		font-size: .875em;
+	}	
+	
+	#calculator input,
+	#calculator select  {
+		padding: 0 10px;
+		height: 30px;
+		line-height: 30px;
+	}
+
+	#calculator select 	 {
+		padding: 7px 4px;	
+	}
+	
+	#calculator .gform_button {
+		font-size: 1.25em;
+	}	
+}
+
+
+@media only screen and (max-device-width: 568px), only screen and (max-width: 568px) {
+	.pricing h3 {
+		font-size: 3em;
+	}
+}
+
+
+
+a.overlay-pricing,
+.overlay-pricing:hover {
+	color : #fff !important;
+}
+.overlay-pricing {
+    background: none repeat scroll 0 0 #0B9CA9;
+    clear: both;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+	font-family: 'AvantGardeGothicITCW01B 731069', sans-serif;
+    font-size: 1.25em;
+    margin: 0 0 16px;
+	max-width: 610px;
+    padding: 30px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+	transition: all 0.2s ease-out 0s;
+}
+
+.overlay-pricing:hover {
+    background: none repeat scroll 0 0 #127F88;
+}
+
+#calculator .gform_footer {
+	margin-top: 18px;
+}
+
+.pricing .lead {
+	font-size: 1.25em;
+	line-height: 1;
+}
+
+
+
+
+#calculator input[type="text"].err, 
+#calculator .err {
+    background-color: #FFCFDC !important;
+    border-color: #fff !important;
+    border-style: solid;
+    border-width: 2px !important;
+}
+
+.pricing .response-errors .err,
+.pricing .response-errors.err {
+	color: #222;
+	padding: 6px;
+}
+
+#calculator input[type="text"]:focus,
+#calculator .err:focus {
+	background-color: #fff !important;
+	border-color: #fff !important;
+}
+
+#calc-results-header,
+#calc-results-footer {
+	margin: 18px 0;
+}
