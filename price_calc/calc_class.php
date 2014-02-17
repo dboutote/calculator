@@ -69,6 +69,7 @@ if( !class_exists('TintCalc') ) {
 				'calc_phone' => __("Please enter your phone number"),
 				'calc_salon' => __("Please enter the name of your salon"),
 				'calc_address' => __("Please enter the address of your salon"),
+				'calc_address2' => __("Please enter the city, state, and zip of your salon"),
 				'calc_pos' => __("Please enter the name of your POS system"),
 				'calc_colors' => __("Please enter your color lines"),
 				'calc_colorcost' => __("Please enter your average cost of color"),
@@ -137,14 +138,14 @@ if( !class_exists('TintCalc') ) {
 
 				// Estimated Cost Savings
 				$three = absint($three);
-				$estimated_cost_savings = ($three - 1.75) / $three;
+				$estimated_cost_savings = (($three - 1.75) / $three) * 100;
 				$estimated_cost_savings_percent = round($estimated_cost_savings, 2);
 				$estimated_cost_savings_text = '<p>Estimated Cost Savings Using SureTint: ' .$estimated_cost_savings_percent. '%</p>';
 				
 				// Estimated Net Annual Savings
 				$estimated_net_annual_savings = (((($one/$two)*$three)*$four)*$estimated_cost_savings_percent)*52;
 				$estimated_net_annual_savings = round($estimated_net_annual_savings);
-				$estimated_net_annual_savings_text = ($estimated_net_annual_savings > 12000) ? '<p>Estimated Net Annual Savings Using SureTint: $' .$estimated_net_annual_savings.'</p>' : '';
+				$estimated_net_annual_savings_text = ($estimated_net_annual_savings > 12000) ? '<p>Estimated Net Annual Savings Using SureTint: $' .number_format($estimated_net_annual_savings, 2).'</p>' : '';
 			
 			}
 						
@@ -221,6 +222,7 @@ if( !class_exists('TintCalc') ) {
 				$calc_phone;
 				$calc_salon;
 				$calc_address;
+				$calc_address2;
 				$calc_pos;
 				$calc_colors;
 				$calc_colorcost;
@@ -306,6 +308,9 @@ if( !class_exists('TintCalc') ) {
 			if( !is_admin() ) {
 				wp_register_script( 'calc_scripts', CALC_JS_URL  . '/calc.js', array( 'jquery' ), 1.0, true );
 			}
+			if( !is_admin() ) {
+				wp_register_script( 'jquery.validate', CALC_JS_URL  . '/jquery.validate.min.js', array( 'jquery' ), 1.0, true );
+			}
 		}
 
 		
@@ -316,7 +321,7 @@ if( !class_exists('TintCalc') ) {
 		 * @uses wp_localize_script()
 		 */
 		function add_scripts_frontend() {
-
+			wp_enqueue_script('jquery.validate');
 			wp_enqueue_script('calc_scripts');
 
 			wp_localize_script(

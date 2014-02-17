@@ -17,49 +17,54 @@
 			<li class="gfield gfield_contains_required">
 				<label class="gfield_label" for="calc_name">Name<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
-					<input id="calc_name" class="medium" type="text" value="" name="calc_name" aria-required="true" />
+					<input id="calc_name" class="medium required" type="text" value="" name="calc_name" />
 				</div>
 			</li>
 			<li class="gfield gfield_contains_required">
 				<label class="gfield_label" for="calc_title">Title<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
-					<input id="calc_title" class="medium" type="text" value="" name="calc_title" aria-required="true" />
+					<input id="calc_title" class="medium required" type="text" value="" name="calc_title" />
 				</div>
 			</li>				
 			<li class="gfield gfield_contains_required">
 				<label class="gfield_label" for="calc_email">Email<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
-					<input id="calc_email" class="medium" type="text" value="" name="calc_email" aria-required="true" placeholder="name@email.com" />
+					<input id="calc_email" class="medium required email" type="text" value="" name="calc_email" placeholder="name@email.com" />
 				</div>
 			</li>	
 			<li class="gfield gfield_contains_required">
 				<label class="gfield_label" for="calc_phone">Phone Number<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
-				<input id="calc_phone" class="medium" type="text" value="" name="calc_phone" aria-required="true" placeholder="(###) ###-####" />
+				<input id="calc_phone" class="medium required" type="text" value="" name="calc_phone" placeholder="(###) ###-####" />
 				</div>
 			</li>	
 			<li class="gfield gfield_contains_required">
 				<label class="gfield_label" for="calc_salon">Salon Name<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
-					<input id="calc_salon" class="medium" type="text" value="" name="calc_salon" aria-required="true" />
+					<input id="calc_salon" class="medium required" type="text" value="" name="calc_salon"  />
 				</div>
 			</li>	
 			<li class="gfield gfield_contains_required">
 				<label class="gfield_label" for="calc_address">Salon Address<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
-					<input id="calc_address" class="medium" type="text" value="" name="calc_address" aria-required="true" placeholder="5 Main St. City, ST 000000"/> 
+					<input id="calc_address" class="medium required" type="text" value="" name="calc_address"  placeholder="5 Main St. City, ST 000000"/> 
+				</div>
+				<label class="gfield_label" for="calc_address2"></label>
+				<div class="ginput_container">
+					<input id="calc_address2" class="medium required" type="text" value="" name="calc_address2" placeholder="City, State Zip"/> 
 				</div>
 			</li>	
+
 			<li class="gfield gfield_contains_required">
 				<label class="gfield_label" for="calc_pos">POS System<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
-					<input id="calc_pos" class="medium" type="text" value="" name="calc_pos" aria-required="true" />
+					<input id="calc_pos" class="medium required" type="text" value="" name="calc_pos" />
 				</div>
 			</li>						
 			<li class="gfield gfield_contains_required">
 				<label class="gfield_label" for="calc_colors">Color Line(s)<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
-					<input id="calc_colors" class="medium" type="text" value="" name="calc_colors" aria-required="true" />
+					<input id="calc_colors" class="medium required" type="text" value="" name="calc_colors" />
 				</div>
 			</li>				
 		</ul>
@@ -68,7 +73,7 @@
 			<li class="gfield gfield_contains_required">
 				<label class="gfield_label" for="calc_colorcost">Average Cost of color (tubes/bottles) used in your salon:<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
-					<select id="calc_colorcost" name="calc_colorcost" aria-required="true">
+					<select id="calc_colorcost" name="calc_colorcost" class="required with_other">
 						<?php 
 						$color_costs = array(
 							'5' => '$5.00',
@@ -85,14 +90,14 @@
 							<option value="<?php echo $cost;?>"><?php echo $label; ?></option>					
 						<?php } ?>				
 					</select>
-					<input placeholder="#.##" type="text" id="calc_colorcost_otr" name="calc_colorcost_otr" class="display-no otr-control" />
+					<input placeholder="#.##" type="text" id="calc_colorcost_otr" name="calc_colorcost_otr" class="display-no otr-control required" />
 				</div>
 			</li>
 			
 			<li class="gfield gfield_contains_required">
 				<label class="gfield_label" for="calc_tubesize">Average Tube/Bottle size in ounces:<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
-					<select id="calc_tubesize" name="calc_tubesize" aria-required="true">
+					<select id="calc_tubesize" name="calc_tubesize" class="required with_other">
 						<?php 
 						$tube_sizes = array(
 							'1.7' => '1.7oz',
@@ -105,14 +110,14 @@
 							<option value="<?php echo $size;?>"><?php echo $label; ?></option>					
 						<?php } ?>				
 					</select>
-					<input placeholder="#.##" type="text" id="calc_tubesize_otr" name="calc_tubesize_otr" class="display-no otr-control" />
+					<input placeholder="#.##" type="text" id="calc_tubesize_otr" name="calc_tubesize_otr" class="display-no otr-control required" />
 				</div>
 			</li>
 			
-			<li class="gfield gfield_contains_required">
+			<li class="gfield gfield_contains_required ">
 				<label class="gfield_label" for="calc_coloramt">Average amount of color used per color service in ounces:<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
-					<select id="calc_coloramt" name="calc_coloramt" aria-required="true">
+					<select id="calc_coloramt" name="calc_coloramt" class="required with_other">
 						<?php 
 						$color_amts = array(
 							'2.75' => '2.75oz',
@@ -125,7 +130,7 @@
 							<option value="<?php echo $amt;?>"><?php echo $label; ?></option>					
 						<?php } ?>				
 					</select>
-					<input placeholder="#.##" type="text" id="calc_coloramt_otr" name="calc_coloramt_otr" class="display-no otr-control" />
+					<input placeholder="#.##" type="text" id="calc_coloramt_otr" name="calc_coloramt_otr" class="display-no otr-control required" />
 				</div>
 			</li>
 			
@@ -133,7 +138,7 @@
 			<li class="gfield gfield_contains_required">
 				<label class="gfield_label" for="calc_colorservices">Average number of total salon color services per week:<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
-					<select id="calc_colorservices" name="calc_colorservices" aria-required="true">
+					<select id="calc_colorservices" name="calc_colorservices" class="required with_other">
 						<?php 
 						$color_services = array(
 							'50' => '50',
@@ -152,7 +157,7 @@
 							<option value="<?php echo $qty;?>"><?php echo $label; ?></option>					
 						<?php } ?>				
 					</select>
-					<input placeholder="###" type="text" id="calc_colorservices_otr" name="calc_colorservices_otr" class="display-no otr-control" />
+					<input placeholder="###" type="text" id="calc_colorservices_otr" name="calc_colorservices_otr" class="display-no otr-control required" />
 				</div>
 			</li>			
 		</ol>

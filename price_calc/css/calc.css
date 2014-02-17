@@ -30,11 +30,14 @@
     background: none repeat scroll 0 0 rgba(106, 31, 34, 0.95);
 	display: none;
     /*height: 100%;*/
-	min-height: 1600px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+	border: 3px solid black;
+    position:absolute;
+    top: 25px;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+    width: 600px;
     z-index: 9999;
 	color: #fff;
 }
@@ -59,6 +62,20 @@
 	-o-transition: all 0.2s ease-out;
 	transition: all 0.2s ease-out;  
 }
+
+#calculator input.required, #calculator select.required
+{
+	color:#000;
+}
+
+
+.pricing label.error {
+    color: #FFFFFF;
+    font-family: 'ITCAvantGardeW01-CnBk', sans-serif;
+   
+}
+
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
 	.pricing .close {
 		background-image: url('../img/sprite@2x.png');
@@ -93,12 +110,18 @@
 	color: #fff;
 }
 
+#calculator label.error {
+	font-size: .9em;
+	margin-top: 1px;
+}
+
 .pricing .validation_message,
 .pricing .validation_error,
 .pricing .form-header,
 .pricing .form-footer,
 .pricing .response-errors,
-#calcresponse {
+#calcresponse,
+label.error {
     color: #FFFFFF;
     font-family: 'ITCAvantGardeW01-CnBk', sans-serif;
     font-size: 1em;
@@ -194,7 +217,8 @@
 	.pricing .validation_error,
 	.pricing .form-header,
 	.pricing .form-footer,
-	.pricing .response-errors {
+	.pricing .response-errors, 
+	label.error {
 		font-size: .875em;
 	}	
 	
@@ -262,7 +286,8 @@ a.overlay-pricing,
 
 
 #calculator input[type="text"].err, 
-#calculator .err {
+#calculator .err,
+#calculator input[type="text"].error, #calculator submit.error {
     background-color: #FFCFDC !important;
     border-color: #fff !important;
     border-style: solid;
