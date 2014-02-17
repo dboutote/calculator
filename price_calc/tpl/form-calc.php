@@ -136,7 +136,7 @@
 			
 			
 			<li class="gfield gfield_contains_required">
-				<label class="gfield_label" for="calc_colorservices">Average number of total salon color services per week:<span class="gfield_required">*</span></label>
+				<label class="gfield_label" for="calc_colorservices">Average number of total color services per week:<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
 					<select id="calc_colorservices" name="calc_colorservices" class="required with_other">
 						<?php 
