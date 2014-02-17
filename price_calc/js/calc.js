@@ -101,27 +101,20 @@ jQuery(function($) {
 			var $loader = $('.loading', $form);
 
 			//Bail if invalid
-			if(!$form.valid()) { return false; } 
-
-			// Disable the submit button to prevent repeated clicks
-			$subBtn.attr('disabled', true);
-			$loader.show();
-
-
-
-			// check required fields
-			
-			
-			if(input_errors){
+			if(!$form.valid()) { 
 				if( $formHeader.children('.validation_error').length < 1 ){
 					$formHeader.append($('<div />', {class: 'validation_error', text: 'There was a problem with your submission. Errors have been highlighted below.'}));
 				}
 				$subBtn.attr('disabled', false);
 				$loader.hide();
 				$("html, body").animate({ scrollTop: 0 }, "slow");
-				$pricingOverlay.css({'height':(($(document).height()) )+'px'});
-				return false;
-			}
+				return false; 
+			} 
+
+			// Disable the submit button to prevent repeated clicks
+			$subBtn.attr('disabled', true);
+			$loader.show();
+
 
 			// ajax all the things
 			var request = $.ajax({
@@ -157,17 +150,6 @@ jQuery(function($) {
 			// Prevent the form from submitting with the default action
 			return false;
 						
-		});
-			
-				
-			
+		});		
 	}
-	
-
-	
-	
-	
-	
-	
-	
 });

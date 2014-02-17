@@ -35,7 +35,7 @@
 			<li class="gfield gfield_contains_required">
 				<label class="gfield_label" for="calc_phone">Phone Number<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
-				<input id="calc_phone" class="medium required" type="text" value="" name="calc_phone" placeholder="(###) ###-####" />
+				<input id="calc_phone" class="medium required phoneUS" type="text" value="" name="calc_phone" placeholder="(###) ###-####" />
 				</div>
 			</li>	
 			<li class="gfield gfield_contains_required">

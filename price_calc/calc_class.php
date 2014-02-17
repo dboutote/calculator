@@ -138,12 +138,12 @@ if( !class_exists('TintCalc') ) {
 
 				// Estimated Cost Savings
 				$three = absint($three);
-				$estimated_cost_savings = (($three - 1.75) / $three) * 100;
-				$estimated_cost_savings_percent = round($estimated_cost_savings, 2);
+				$estimated_cost_savings = (($three - 1.75) / $three);
+				$estimated_cost_savings_percent = round(($estimated_cost_savings * 100), 2);
 				$estimated_cost_savings_text = '<p>Estimated Cost Savings Using SureTint: ' .$estimated_cost_savings_percent. '%</p>';
 				
 				// Estimated Net Annual Savings
-				$estimated_net_annual_savings = (((($one/$two)*$three)*$four)*$estimated_cost_savings_percent)*52;
+				$estimated_net_annual_savings = (((($one/$two)*$three)*$four)*$estimated_cost_savings)*52;
 				$estimated_net_annual_savings = round($estimated_net_annual_savings);
 				$estimated_net_annual_savings_text = ($estimated_net_annual_savings > 12000) ? '<p>Estimated Net Annual Savings Using SureTint: $' .number_format($estimated_net_annual_savings, 2).'</p>' : '';
 			
@@ -307,9 +307,8 @@ if( !class_exists('TintCalc') ) {
 		function register_scripts_frontend(){
 			if( !is_admin() ) {
 				wp_register_script( 'calc_scripts', CALC_JS_URL  . '/calc.js', array( 'jquery' ), 1.0, true );
-			}
-			if( !is_admin() ) {
 				wp_register_script( 'jquery.validate', CALC_JS_URL  . '/jquery.validate.min.js', array( 'jquery' ), 1.0, true );
+				wp_register_script( 'jquery.validate-additional', CALC_JS_URL  . '/additional-methods.min.js', array( 'jquery' ), 1.0, true );
 			}
 		}
 
@@ -322,6 +321,7 @@ if( !class_exists('TintCalc') ) {
 		 */
 		function add_scripts_frontend() {
 			wp_enqueue_script('jquery.validate');
+			wp_enqueue_script('jquery.validate-additional');
 			wp_enqueue_script('calc_scripts');
 
 			wp_localize_script(
