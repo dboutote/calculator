@@ -21,7 +21,7 @@
 
 .container {
     margin: 0 auto;
-    max-width: 1170px;
+    max-width: 535px;
     padding: 0 20px;
 }
 
@@ -66,6 +66,25 @@
 	color:#000;
 }
 
+
+
+#calculator input.city {
+    display:inline;
+    max-width: 300px;
+    margin-bottom:5px;
+}
+
+#calculator input.state {
+    max-width: 60px;
+    display:inline;
+    margin-bottom:5px;
+}
+
+#calculator input.zip {
+    max-width: 166px;
+    display:inline;
+    margin-bottom:5px;
+}
 
 .pricing label.error {
     color: #FFFFFF;
@@ -272,6 +291,16 @@ a.overlay-pricing,
 
 #calculator .gform_footer {
 	margin-top: 18px;
+}
+
+#calculator .gform_footer .quote {
+    margin-top:35px;
+    font-size: 1.25em;
+}
+#calculator .gform_footer .quoteByline {
+    font-size: .75em;
+    margin-left:10px;
+    margin-top:10px;
 }
 
 .pricing .lead {

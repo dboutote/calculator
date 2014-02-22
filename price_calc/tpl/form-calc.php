@@ -4,12 +4,12 @@
 
 <div class="container">
 
-<h3 id="calc-title">Get a Quote</h3>
+<h3 id="calc-title">Calculate My Color Savings</h3>
 
 <form id="calculator" action="#" method="post" role="form">
 
 	<div class="form-header">
-		<p class="lead">Fill in the information below for your personal cost savings quote.</p>
+		<p class="lead">Fill in the information below for your instant personal cost savings calculation and see how SureTint can positively impact your business.</p>
 	</div>
 
 	<div class="gform_body">
@@ -51,7 +51,9 @@
 				</div>
 				<label class="gfield_label" for="calc_address2"></label>
 				<div class="ginput_container">
-					<input id="calc_address2" class="medium required" type="text" value="" name="calc_address2" placeholder="City, State Zip"/> 
+					<input id="calc_address_city" class="medium required city" type="text" value="" name="calc_address_city" placeholder="City"/>
+					<input id="calc_address_state" class="medium required state" type="text" value="" name="calc_address_state" placeholder="State"/>
+					<input id="calc_address_zip" class="medium required zip zipcodeUS" type="text" value="" name="calc_address_zip" placeholder="Zip"/>
 				</div>
 			</li>	
 
@@ -172,6 +174,15 @@
 		<input id="gform_submit_button_2" class="button gform_button" type="submit" value="Submit" />
 		<div class="loading display-no">(One Moment <span class="spinner">&nbsp;</span>)</div>
 		<div class="response-errors"></div>
+		<div class="quote">
+		<blockquote>
+		"SureTint Technologies provided us with an exceptional color room management System. No serious hair color operation or salon should be without it."
+        </blockquote>
+        <div class="quoteByline">
+        - Larry Silvestri, Senior VP & COO,
+        Mario Tricoci Hair Salon and Day Spa
+        </div>
+        </div>
 	</div>
 	
 </form>

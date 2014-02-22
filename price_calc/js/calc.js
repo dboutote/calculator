@@ -91,6 +91,8 @@ jQuery(function($) {
 
 		  }});
 
+        $("#calc_phone").inputmask("mask", {"mask": "(999) 999-9999"});
+
 		// submitting the form
 		$calcForm.on('submit', function(event){
 			var $form = $(this);
@@ -129,8 +131,8 @@ jQuery(function($) {
 					$responseErrors.empty().html($msg).fadeIn('fast', function() {});
 				} else if('1' === response.code) {
 					var $msg = $('<div />', {class: "alert alert-success", html: response.notice});
-					//$pricingOverlay.css('height', '150%');
-					$('#calc-title').text('Your Results');
+					$pricingOverlay.css('height', '150%');
+					$('#calc-title').text('Your Potential Savings With SureTint');
 					$form.fadeOut( function(){
 						$calcResults.empty().append($msg).fadeIn('fast', function(){
 							$calcResponse.fadeIn();
