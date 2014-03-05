@@ -13,65 +13,19 @@
 	</div>
 
 	<div class="gform_body">
-		<ul id="calculator-contactinfo" class="gform_fields">
-			<li class="gfield gfield_contains_required">
-				<label class="gfield_label" for="calc_name">Name<span class="gfield_required">*</span></label>
-				<div class="ginput_container">
-					<input id="calc_name" class="medium required" type="text" value="" name="calc_name" />
-				</div>
-			</li>
-			<li class="gfield gfield_contains_required">
-				<label class="gfield_label" for="calc_title">Title<span class="gfield_required">*</span></label>
-				<div class="ginput_container">
-					<input id="calc_title" class="medium required" type="text" value="" name="calc_title" />
-				</div>
-			</li>				
-			<li class="gfield gfield_contains_required">
-				<label class="gfield_label" for="calc_email">Email<span class="gfield_required">*</span></label>
-				<div class="ginput_container">
-					<input id="calc_email" class="medium required email" type="text" value="" name="calc_email" placeholder="name@email.com" />
-				</div>
-			</li>	
-			<li class="gfield gfield_contains_required">
-				<label class="gfield_label" for="calc_phone">Phone Number<span class="gfield_required">*</span></label>
-				<div class="ginput_container">
-				<input id="calc_phone" class="medium required phoneUS" type="text" value="" name="calc_phone" placeholder="(###) ###-####" />
-				</div>
-			</li>	
-			<li class="gfield gfield_contains_required">
-				<label class="gfield_label" for="calc_salon">Salon Name<span class="gfield_required">*</span></label>
-				<div class="ginput_container">
-					<input id="calc_salon" class="medium required" type="text" value="" name="calc_salon"  />
-				</div>
-			</li>	
-			<li class="gfield gfield_contains_required">
-				<label class="gfield_label" for="calc_address">Salon Address<span class="gfield_required">*</span></label>
-				<div class="ginput_container">
-					<input id="calc_address" class="medium required" type="text" value="" name="calc_address"  placeholder="5 Main St. City, ST 000000"/> 
-				</div>
-				<label class="gfield_label" for="calc_address2"></label>
-				<div class="ginput_container">
-					<input id="calc_address_city" class="medium required city" type="text" value="" name="calc_address_city" placeholder="City"/>
-					<input id="calc_address_state" class="medium required state" type="text" value="" name="calc_address_state" placeholder="State"/>
-					<input id="calc_address_zip" class="medium required zip zipcodeUS" type="text" value="" name="calc_address_zip" placeholder="Zip"/>
-				</div>
-			</li>	
-
-			<li class="gfield gfield_contains_required">
-				<label class="gfield_label" for="calc_pos">POS System<span class="gfield_required">*</span></label>
-				<div class="ginput_container">
-					<input id="calc_pos" class="medium required" type="text" value="" name="calc_pos" />
-				</div>
-			</li>						
-			<li class="gfield gfield_contains_required">
-				<label class="gfield_label" for="calc_colors">Color Line(s)<span class="gfield_required">*</span></label>
-				<div class="ginput_container">
-					<input id="calc_colors" class="medium required" type="text" value="" name="calc_colors" />
-				</div>
-			</li>				
-		</ul>
-
 		<ol id="calculator-qtys" class="gform_fields">
+		    <li class="gfield gfield_contains_required">
+                <label class="gfield_label" for="calc_pos">POS System<span class="gfield_required">*</span></label>
+                <div class="ginput_container">
+                    <input id="calc_pos" class="medium required" type="text" value="" name="calc_pos" />
+                </div>
+            </li>
+            <li class="gfield gfield_contains_required">
+                <label class="gfield_label" for="calc_colors">Color Line(s)<span class="gfield_required">*</span></label>
+                <div class="ginput_container">
+                    <input id="calc_colors" class="medium required" type="text" value="" name="calc_colors" />
+                </div>
+            </li>
 			<li class="gfield gfield_contains_required">
 				<label class="gfield_label" for="calc_colorcost">Average Cost of color (tubes/bottles) used in your salon:<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
@@ -161,9 +115,61 @@
 					</select>
 					<input placeholder="###" type="text" id="calc_colorservices_otr" name="calc_colorservices_otr" class="display-no otr-control required" />
 				</div>
-			</li>			
+			</li>
+		    <li class="gfield gfield_contains_required">
+                   <label class="gfield_label" for="calc_partial_percentage">What percentage of the above services are partial/zone services? (For example: Retouch)<span class="gfield_required">*</span></label>
+                   <div class="ginput_container">
+                       <input id="calc_partial_percentage" class="medium required number percentage" type="text" value="" name="calc_partial_percentage" />%
+                   </div>
+		    </li>
 		</ol>
+<hr />
+        		<ul id="calculator-contactinfo" class="gform_fields">
+        			<li class="gfield gfield_contains_required">
+        				<label class="gfield_label" for="calc_name">Name<span class="gfield_required">*</span></label>
+        				<div class="ginput_container">
+        					<input id="calc_name" class="medium required" type="text" value="" name="calc_name" />
+        				</div>
+        			</li>
+        			<li class="gfield gfield_contains_required">
+        				<label class="gfield_label" for="calc_title">Title<span class="gfield_required">*</span></label>
+        				<div class="ginput_container">
+        					<input id="calc_title" class="medium required" type="text" value="" name="calc_title" />
+        				</div>
+        			</li>
+        			<li class="gfield gfield_contains_required">
+        				<label class="gfield_label" for="calc_email">Email<span class="gfield_required">*</span></label>
+        				<div class="ginput_container">
+        					<input id="calc_email" class="medium required email" type="text" value="" name="calc_email" placeholder="name@email.com" />
+        				</div>
+        			</li>
+        			<li class="gfield gfield_contains_required">
+        				<label class="gfield_label" for="calc_phone">Phone Number<span class="gfield_required">*</span></label>
+        				<div class="ginput_container">
+        				<input id="calc_phone" class="medium required phoneUS" type="text" value="" name="calc_phone" placeholder="(###) ###-####" />
+        				</div>
+        			</li>
+        			<li class="gfield gfield_contains_required">
+        				<label class="gfield_label" for="calc_salon">Salon Name<span class="gfield_required">*</span></label>
+        				<div class="ginput_container">
+        					<input id="calc_salon" class="medium required" type="text" value="" name="calc_salon"  />
+        				</div>
+        			</li>
+        			<li class="gfield gfield_contains_required">
+        				<label class="gfield_label" for="calc_address">Salon Address<span class="gfield_required">*</span></label>
+        				<div class="ginput_container">
+        					<input id="calc_address" class="medium required" type="text" value="" name="calc_address"  placeholder="5 Main St. City, ST 000000"/>
+        				</div>
+        				<label class="gfield_label" for="calc_address2"></label>
+        				<div class="ginput_container">
+        					<input id="calc_address_city" class="medium required city" type="text" value="" name="calc_address_city" placeholder="City"/>
+        					<input id="calc_address_state" class="medium required state" type="text" value="" name="calc_address_state" placeholder="State"/>
+        					<input id="calc_address_zip" class="medium required zip zipcodeUS" type="text" value="" name="calc_address_zip" placeholder="Zip"/>
+        				</div>
+        			</li>
 
+
+        		</ul>
 
 	</div>
 
@@ -174,15 +180,6 @@
 		<input id="gform_submit_button_2" class="button gform_button" type="submit" value="Submit" />
 		<div class="loading display-no">(One Moment <span class="spinner">&nbsp;</span>)</div>
 		<div class="response-errors"></div>
-		<div class="quote">
-		<blockquote>
-		"SureTint Technologies provided us with an exceptional color room management System. No serious hair color operation or salon should be without it."
-        </blockquote>
-        <div class="quoteByline">
-        - Larry Silvestri, Senior VP & COO,
-        Mario Tricoci Hair Salon and Day Spa
-        </div>
-        </div>
 	</div>
 	
 </form>
@@ -191,6 +188,15 @@
 		<?php do_action('pc_results_before');?>
 		<div id="calcresults"></div>
 		<?php do_action('pc_results_after');?>
+		<div class="quote">
+        <blockquote>
+        "SureTint Technologies provided us with an exceptional color room management System. No serious hair color operation or salon should be without it."
+        </blockquote>
+        <div class="quoteByline">
+        - Larry Silvestri, Senior VP & COO,
+        Mario Tricoci Hair Salon and Day Spa
+        </div>
+        </div>
 	</div>	
 	
 </div>

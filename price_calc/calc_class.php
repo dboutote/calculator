@@ -237,6 +237,7 @@ if( !class_exists('TintCalc') ) {
 				$calc_coloramt_otr;
 				$calc_colorservices;
 				$calc_colorservices_otr;
+				calc_partial_percentage;
 				*/
 				
 				
