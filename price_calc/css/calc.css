@@ -1,6 +1,4 @@
-@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=4b48a6cf-5251-4631-920f-e61b3fe82937");
-
-.assistive-text {
+#calculator .assistive-text {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
 }
@@ -19,7 +17,7 @@
     width: 16px;
 }
 
-.container {
+#calculator .container {
     margin: 0 auto;
     max-width: 535px;
     padding: 0 20px;
@@ -269,31 +267,7 @@ label.error {
 
 
 
-a.overlay-pricing,
-.overlay-pricing:hover {
-	color : #fff !important;
-}
-.overlay-pricing {
-    background: none repeat scroll 0 0 #0B9CA9;
-    clear: both;
-    color: #FFFFFF;
-    cursor: pointer;
-    float: left;
-	font-family: 'AvantGardeGothicITCW01B 731069', sans-serif;
-    font-size: 1.25em;
-    margin: 0 0 16px;
-	max-width: 610px;
-    padding: 30px 0;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 100%;
-	transition: all 0.2s ease-out 0s;
-}
 
-.overlay-pricing:hover {
-    background: none repeat scroll 0 0 #127F88;
-}
 
 #calculator .gform_footer {
 	margin-top: 18px;
