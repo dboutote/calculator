@@ -258,7 +258,7 @@ if ( !class_exists("CALC_Backend") ) {
 					$pre_value = ( isset($data['calc_email_messages_pre_results']) ) ? $data['calc_email_messages_pre_results'] : '';
 
 					// update the post-results message
-					$post_value = ( isset($data['calc_form_messages_post_results']) ) ? $data['calc_form_messages_post_results'] : '';
+					$post_value = ( isset($data['calc_email_messages_post_results']) ) ? $data['calc_email_messages_post_results'] : '';
 
 					$key = 'calc_email_settings';
 					$value = array(
