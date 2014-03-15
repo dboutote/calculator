@@ -1,8 +1,4 @@
-<div id="cost-savings-quote" class="overlay pricing">
-
-<span class="close"><span>Close</span></span>
-
-<div class="container">
+<div id="cost-savings-quote" class="pricing">
 
 <h3 id="calc-title">Calculate My Color Savings</h3>
 
@@ -199,5 +195,5 @@
         </div>
 	</div>	
 	
-</div>
+
 </div>	

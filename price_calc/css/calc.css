@@ -1,3 +1,8 @@
+#calculator ul, #calculator ol, #calculator li {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
 #calculator .assistive-text {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
@@ -26,45 +31,14 @@
 .pricing {
 	background: #6A1F22;
     background: none repeat scroll 0 0 rgba(106, 31, 34, 0.95);
-	display: none;
-    /*height: 100%;*/
-	border: none;
-    position:absolute;
-    left:0;
-    right:0;
-	top: 0;
-    width: 100%;
-    z-index: 9999;
+	padding: 0 20px;
 	color: #fff;
 }
 
-.pricing .close {
-    background-image: url("../img/sprite.png");
-    background-position: 0 -389px;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-family: 'AvantGardeGothicITCW01B 731069', sans-serif;
-    font-size: 0.75em;
-    font-style: normal;
-    font-weight: 400;
-    padding-top: 42px;
-    position: absolute;
-    right: 20px;
-    text-align: center;
-    top: 20px;
-    width: 42px;
-	-webkit-transition: all 0.2s ease-out;
-	-moz-transition: all 0.2s ease-out;
-	-o-transition: all 0.2s ease-out;
-	transition: all 0.2s ease-out;  
-}
-
-#calculator input.required, #calculator select.required
-{
+#calculator input.required, 
+#calculator select.required {
 	color:#000;
 }
-
-
 
 #calculator input.city {
     display:inline;
@@ -86,8 +60,7 @@
 
 .pricing label.error {
     color: #FFFFFF;
-    font-family: 'ITCAvantGardeW01-CnBk', sans-serif;
-   
+    font-family: 'ITCAvantGardeW01-CnBk', sans-serif;   
 }
 
 
@@ -97,13 +70,10 @@
 		background-size: 200px 600px;
 	}
 }
-.pricing .close:hover {
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
+
 .pricing h3 {
   color: #ffffff;
-  font-size: 3em;
+  font-size: 3em !important;
   font-family: "Avenir Next W01 Cn Thin", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -182,8 +152,9 @@ label.error {
 }
 
 #calculator input.percentage {
-    width:50px;
-    display:inline;
+    display: inline;
+    margin-right: 2px;
+    width: 50px;
 }
 
 #calculator select {
@@ -232,7 +203,7 @@ label.error {
 		padding: 80px 0 20px;
 		line-height: 50px;
 	}
-	
+
 	.pricing .validation_message,
 	.pricing .validation_error,
 	.pricing .form-header,
@@ -241,7 +212,7 @@ label.error {
 	label.error {
 		font-size: .875em;
 	}	
-	
+
 	#calculator input,
 	#calculator select  {
 		padding: 0 10px;
@@ -252,7 +223,7 @@ label.error {
 	#calculator select 	 {
 		padding: 7px 4px;	
 	}
-	
+
 	#calculator .gform_button {
 		font-size: 1.25em;
 	}	

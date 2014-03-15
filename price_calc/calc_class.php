@@ -13,8 +13,8 @@ if( !class_exists('TintCalc') ) {
 			
 			add_action( 'wp_ajax_st_setup_pricecalc', array(&$this, 'process_pricecalc_jax'));
 			add_action( 'wp_ajax_nopriv_st_setup_pricecalc', array(&$this, 'process_pricecalc_jax'));
-			add_shortcode('calc_button', array(&$this, 'calc_button'));
-			add_action('wp_footer', array(&$this, 'calc_form') );
+			add_shortcode('calc_button', array(&$this, 'calc_form'));
+			//add_action('wp_footer', array(&$this, 'calc_form') );
 		}
 		
 		
