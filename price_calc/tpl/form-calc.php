@@ -106,7 +106,7 @@
 							'otr' => 'Other'						
 						);
 						foreach($color_services as $qty => $label) { ?>
-							<option value="<?php echo $qty;?>"><?php echo $label; ?></option>					
+							<option <?php if($qty == '200'){ echo "selected='selected'"; } ?> value="<?php echo $qty;?>"><?php echo $label; ?></option>
 						<?php } ?>				
 					</select>
 					<input placeholder="###" type="text" id="calc_colorservices_otr" name="calc_colorservices_otr" class="display-no otr-control required" />
