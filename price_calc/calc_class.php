@@ -138,9 +138,12 @@ if( !class_exists('TintCalc') ) {
 				// #4
 				$four = ( '' !== $calc_colorservices_otr ) ? $calc_colorservices_otr : $calc_colorservices;	
 
+				$rt = $calc_partial_percentage;
+
 				// Estimated Cost Savings
 				$three = absint($three);
-				$estimated_cost_savings = (($three - 1.75) / $three);
+				$estimated_cost_savings = ((1-($rt*0.01))*($three-1.75) + ($rt*0.01)*($three-1.0))/$three;
+				//$estimated_cost_savings = (($three - 1.75) / $three);
 				$estimated_cost_savings_percent = round(($estimated_cost_savings * 100), 2);
 				$estimated_cost_savings_text = '<p>Estimated Cost Savings Using SureTint: ' .$estimated_cost_savings_percent. '%</p>';
 				
@@ -237,7 +240,7 @@ if( !class_exists('TintCalc') ) {
 				$calc_coloramt_otr;
 				$calc_colorservices;
 				$calc_colorservices_otr;
-				calc_partial_percentage;
+				$calc_partial_percentage;
 				*/
 				
 				
