@@ -54,6 +54,8 @@ if( !class_exists('TintCalc') ) {
 			$errors = array();
 			$response = array();
 			$calc_colorcost_otr = $calc_tubesize_otr = $calc_coloramt_otr = $calc_colorservices_otr = '';
+			$gram_check = 28;
+			$gram_convert = 28.34;
 			
 			// sanitize the data
 			$data = CalcUtils::sanitize_data_array($raw_data);
@@ -131,10 +133,21 @@ if( !class_exists('TintCalc') ) {
 			if( empty($errors) ){
 				// #1
 				$one = ( '' !== $calc_colorcost_otr ) ? $calc_colorcost_otr : $calc_colorcost;
-				// #2
+				
+				// #2 (if they entered an amount larger than the gram check, assume they've entered grams, not ounces)
 				$two = ( '' !== $calc_tubesize_otr ) ? $calc_tubesize_otr : $calc_tubesize;
-				// #3
-				$three = ( '' !== $calc_coloramt_otr ) ? $calc_coloramt_otr : $calc_coloramt;
+				if( $two >= $gram_check ){
+					$two = $two/$gram_convert;
+					$two = number_format((float)$two, 2, '.', '');
+				}	
+								
+				// #3 (if they entered an amount larger than the gram check, assume they've entered grams, not ounces)
+				$three = ( '' !== $calc_coloramt_otr ) ? $calc_coloramt_otr : $calc_coloramt;				
+				if( $three >= $gram_check ){
+					$three = $three/$gram_convert;
+					$three = number_format((float)$three, 2, '.', '');
+				}				
+
 				// #4
 				$four = ( '' !== $calc_colorservices_otr ) ? $calc_colorservices_otr : $calc_colorservices;	
 

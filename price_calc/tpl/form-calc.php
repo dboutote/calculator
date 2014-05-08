@@ -52,10 +52,10 @@
 					<select id="calc_tubesize" name="calc_tubesize" class="required with_other">
 						<?php 
 						$tube_sizes = array(
-							'1.7' => '1.7oz',
-							'2' => '2.0oz',
-							'3' => '3.0oz',
-							'5.1' => '5.1oz',
+							'1.7' => '1.7oz (48.2 grams)',
+							'2' => '2.0oz (56.7 grams)',
+							'3' => '3.0oz (85.0 grams)',
+							'5.1' => '5.1oz (144.5 grams)',
 							'otr' => 'Other'						
 						);
 						foreach($tube_sizes as $size => $label) { ?>
@@ -72,10 +72,10 @@
 					<select id="calc_coloramt" name="calc_coloramt" class="required with_other">
 						<?php 
 						$color_amts = array(
-							'2.75' => '2.75oz',
-							'3' => '3.0oz',
-							'3.25' => '3.25oz',
-							'3.5' => '3.5oz',
+							'2.75' => '2.75oz (77.9 grams)',
+							'3' => '3.0oz (85.0 grams)',
+							'3.25' => '3.25oz (92.1 grams)',
+							'3.5' => '3.5oz (99.2 grams)',
 							'otr' => 'Other'						
 						);
 						foreach($color_amts as $amt => $label) { ?>
