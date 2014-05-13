@@ -1,8 +1,4 @@
-<div id="cost-savings-quote" class="overlay pricing">
-
-<span class="close"><span>Close</span></span>
-
-<div class="container">
+<div id="cost-savings-quote" class="pricing">
 
 <h3 id="calc-title">Calculate My Color Savings</h3>
 
@@ -56,11 +52,11 @@
 					<select id="calc_tubesize" name="calc_tubesize" class="required with_other">
 						<?php 
 						$tube_sizes = array(
-							'1.7' => '1.7oz',
-							'2' => '2.0oz',
-							'3' => '3.0oz',
-							'5.1' => '5.1oz',
-							'otr' => 'Other'						
+							'1.7' => '1.7oz (48.2 grams)',
+							'2' => '2.0oz (56.7 grams)',
+							'3' => '3.0oz (85.0 grams)',
+							'5.1' => '5.1oz (144.5 grams)',
+							'otr' => 'Other (in ounces or grams)'						
 						);
 						foreach($tube_sizes as $size => $label) { ?>
 							<option value="<?php echo $size;?>"><?php echo $label; ?></option>					
@@ -76,11 +72,11 @@
 					<select id="calc_coloramt" name="calc_coloramt" class="required with_other">
 						<?php 
 						$color_amts = array(
-							'2.75' => '2.75oz',
-							'3' => '3.0oz',
-							'3.25' => '3.25oz',
-							'3.5' => '3.5oz',
-							'otr' => 'Other'						
+							'2.75' => '2.75oz (77.9 grams)',
+							'3' => '3.0oz (85.0 grams)',
+							'3.25' => '3.25oz (92.1 grams)',
+							'3.5' => '3.5oz (99.2 grams)',
+							'otr' => 'Other (in ounces or grams)'						
 						);
 						foreach($color_amts as $amt => $label) { ?>
 							<option value="<?php echo $amt;?>"><?php echo $label; ?></option>					
@@ -199,5 +195,5 @@
         </div>
 	</div>	
 	
-</div>
+
 </div>	

@@ -1,7 +1,7 @@
 <?php 
 /*
 Plugin Name: Suretint Pricing Calculator
-Version: 1.0
+Version: 1.0.5
 Plugin URI:
 Description: A Lightweight Pricing Calculator
 Author: Darrin Boutote
