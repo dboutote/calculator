@@ -56,7 +56,7 @@
 							'2' => '2.0oz (56.7 grams)',
 							'3' => '3.0oz (85.0 grams)',
 							'5.1' => '5.1oz (144.5 grams)',
-							'otr' => 'Other'						
+							'otr' => 'Other (in ounces or grams)'						
 						);
 						foreach($tube_sizes as $size => $label) { ?>
 							<option value="<?php echo $size;?>"><?php echo $label; ?></option>					
@@ -76,7 +76,7 @@
 							'3' => '3.0oz (85.0 grams)',
 							'3.25' => '3.25oz (92.1 grams)',
 							'3.5' => '3.5oz (99.2 grams)',
-							'otr' => 'Other'						
+							'otr' => 'Other (in ounces or grams)'						
 						);
 						foreach($color_amts as $amt => $label) { ?>
 							<option value="<?php echo $amt;?>"><?php echo $label; ?></option>					
