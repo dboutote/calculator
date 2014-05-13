@@ -47,7 +47,7 @@
 			</li>
 			
 			<li class="gfield gfield_contains_required">
-				<label class="gfield_label" for="calc_tubesize">Average Tube/Bottle size in ounces:<span class="gfield_required">*</span></label>
+				<label class="gfield_label" for="calc_tubesize">Average Tube/Bottle size:<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
 					<select id="calc_tubesize" name="calc_tubesize" class="required with_other">
 						<?php 
@@ -67,7 +67,7 @@
 			</li>
 			
 			<li class="gfield gfield_contains_required ">
-				<label class="gfield_label" for="calc_coloramt">Average amount of color used per color service in ounces:<span class="gfield_required">*</span></label>
+				<label class="gfield_label" for="calc_coloramt">Average amount of color used per color service:<span class="gfield_required">*</span></label>
 				<div class="ginput_container">
 					<select id="calc_coloramt" name="calc_coloramt" class="required with_other">
 						<?php 
