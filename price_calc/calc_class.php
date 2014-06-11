@@ -56,7 +56,8 @@ if( !class_exists('TintCalc') ) {
 			$calc_colorcost_otr = $calc_tubesize_otr = $calc_coloramt_otr = $calc_colorservices_otr = '';
 			$gram_check = 28;
 			$gram_convert = 28.34;
-			
+			$unit_of_measure = 'ounces';
+						
 			// sanitize the data
 			$data = CalcUtils::sanitize_data_array($raw_data);
 			
@@ -137,13 +138,15 @@ if( !class_exists('TintCalc') ) {
 				// #2 (if they entered an amount larger than the gram check, assume they've entered grams, not ounces)
 				$two = ( '' !== $calc_tubesize_otr ) ? $calc_tubesize_otr : $calc_tubesize;
 				if( $two >= $gram_check ){
+					$unit_of_measure = 'grams';
 					$two = $two/$gram_convert;
 					$two = number_format((float)$two, 2, '.', '');
-				}	
-								
+				}
+			
 				// #3 (if they entered an amount larger than the gram check, assume they've entered grams, not ounces)
 				$three = ( '' !== $calc_coloramt_otr ) ? $calc_coloramt_otr : $calc_coloramt;				
 				if( $three >= $gram_check ){
+					$unit_of_measure = 'grams';
 					$three = $three/$gram_convert;
 					$three = number_format((float)$three, 2, '.', '');
 				}				
