@@ -86,13 +86,14 @@ jQuery(function($) {
 		// check to see if the value falls within a range (based on ounces or grams)
 		$.validator.addMethod("gramcheck", function(value, element) {
 			var amt = parseFloat(value);
+			UnitOfMeasure = ( amt >= gramCheck ) ? 'gr' : 'oz';	
 			if( 'gr' === UnitOfMeasure && amt >= 28 && amt <= 150 ){
-				return 1;
+				return true;
 			}
 			if( 'oz' === UnitOfMeasure && amt >= 2.2 && amt <= 10 ){
-				return 1;
+				return true;
 			}			
-			return 0;	
+			return false;	
 		}, 
 			function(){
 				return ( 'oz' === UnitOfMeasure ) ? 'Please enter an amount between 2.2 and 10 (ounces)' : 'Please enter an amount between 28 and 150 (grams)';
@@ -114,8 +115,6 @@ jQuery(function($) {
 				},
 				calc_coloramt_otr: {
 					required: true,
-					min: 2.2,
-					max: 150,
 					gramcheck: true
 				},
 				calc_colorservices_otr: {
@@ -138,11 +137,6 @@ jQuery(function($) {
 					max: function ( params, element){
 						return 'A typical batch size is about 4 oz (115 grams).';					
 					}
-				}				
-			},
-			success: function ( label, e) {
-				if( $(e).attr('name') === 'calc_tubesize_otr'){				
-					UnitOfMeasure = ( parseFloat($(e).val()) >= gramCheck ) ? 'gr' : 'oz';					
 				}				
 			}
 		});
